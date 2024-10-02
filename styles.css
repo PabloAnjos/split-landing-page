@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #242424;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.play-station {
+  background-image: url(images/ps.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 230px;
+  color: #fff;
+}
+
+button {
+  width: 230px;
+  height: 80px;
+  margin-top: 70px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 3px;
+}
+
+#button-play-station:hover {
+  background-color: #0407b4;
+  transition: 0.3s;
+}
+
+#button-xbox:hover {
+  background-color: #1c7a1c;
+  transition: 0.3s;
+}
+
+.xbox {
+  background-image: url(images/xbox.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 150px;
+  }
+
+  .play-station {
+    background-position: center;
+  }
+
+  .xbox {
+    background-position: calc(32%);
+  }
+}
